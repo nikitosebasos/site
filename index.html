@@ -3,100 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лендинг</title>
-    <style>
-        @font-face {
-            font-family: 'Dacik Push';
-            src: url('https://fonts-online.ru/fonts/dacik-push/ttf/DacikPush-Regular.ttf') format('truetype');
-            /* Используем формат TrueType (ttf), так как большинство браузеров его поддерживает */
-            /* Мы указываем прямой URL до файла шрифта */
-        }
-
-        body {
-            font-family: 'Dacik Push', sans-serif;
-            /* Здесь мы указываем использовать шрифт Dacik Push */
-            margin: 0;
-            padding: 0;
-            background: url('https://plus.unsplash.com/premium_photo-1664116928414-2ab998603666?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
-        .container {
-            padding: 20px;
-        }
-        section {
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-            border-radius: 10px;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-        section.active {
-            opacity: 1;
-        }
-        h2 {
-            margin-top: 0;
-            font-size: 2.5em;
-            text-align: center;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: justify;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #f44336;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            text-transform: uppercase;
-            cursor: pointer;
-            margin-bottom: 20px;
-            transition: background-color 0.3s ease-in-out;
-        }
-        button:hover {
-            background-color: #c62828;
-        }
-    </style>
+    <title>Beauty Salon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <button onclick="showSection('about')">О нас</button>
-        <button onclick="showSection('services')">Услуги</button>
-        <button onclick="showSection('pricing')">Цены</button>
-        <button onclick="showSection('contact')">Контактная информация</button>
-        
-        <section id="about" class="active">
-            <h2>О нас</h2>
-            <p>Мы компания, которая стремится предоставить вам лучшие продукты и услуги. Наша команда состоит из опытных профессионалов, готовых удовлетворить ваши потребности.</p>
-        </section>
-        <section id="services">
-            <h2>Услуги</h2>
-            <p>Мы предлагаем широкий спектр услуг, включая консультации, разработку программного обеспечения, маркетинговые исследования, а также поддержку клиентов.</p>
-        </section>
-        <section id="pricing">
-            <h2>Цены</h2>
-            <p>Наши цены конкурентноспособны и доступны для широкого круга клиентов. Мы стремимся предоставить высококачественные услуги по разумным ценам.</p>
-        </section>
-        <section id="contact">
-            <h2>Контактная информация</h2>
-            <p>Вы можете связаться с нами по телефону +123456789 или отправить нам сообщение на электронную почту info@example.com. Мы будем рады ответить на ваши вопросы.</p>
-        </section>
-    </div>
-    <script>
-        function showSection(sectionId) {
-            var sections = document.querySelectorAll('section');
-            sections.forEach(function(section) {
-                if (section.id === sectionId) {
-                    section.classList.add('active');
-                } else {
-                    section.classList.remove('active');
-                }
-            });
-        }
-    </script>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Beauty Salon</div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#why-us">Почему мы</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Добро пожаловать в Beauty Salon</h1>
+            <p>Наш салон красоты предлагает вам широкий спектр услуг, которые помогут вам выглядеть и чувствовать себя лучше.</p>
+            <a href="#contact" class="btn">Записаться</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Стрижка</h3>
+                    <p>Мы создадим для вас идеальный образ, подчеркивая вашу индивидуальность.</p>
+                </div>
+                <div class="service">
+                    <h3>Макияж</h3>
+                    <p>Наши визажисты помогут вам выглядеть неповторимо в любое время суток.</p>
+                </div>
+                <div class="service">
+                    <h3>Маникюр и педикюр</h3>
+                    <p>Доверьте уход за вашими ногтями нашим профессионалам и наслаждайтесь идеальным результатом.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Добавьте другие разделы (Why Us, Gallery, Contact) с аналогичной структурой -->
+
+    <footer class="footer">
+        <div class="container">
+            <p>Beauty Salon &copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
