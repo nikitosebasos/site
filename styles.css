@@ -1,0 +1,222 @@
+/* Общие стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Стили шапки */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили героя */
+.hero {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Стили для раздела услуг */
+.services {
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+/* Ваш файл styles.css */
+
+/* Добавляем фотографию в качестве фона для лендинга */
+body {
+    background-image: url('https://cdn.dribbble.com/userupload/3282514/file/original-ebb25158c8d3692c7d30208406016586.jpg?resize=1504x1003');
+    background-size: cover;
+    background-position: center;
+}
+/* Ваш файл styles.css */
+
+/* Стили для шапки */
+.header {
+    background-color: rgba(51, 51, 51, 0.5); /* Цвет с прозрачностью */
+    color: #fff;
+    padding: 20px 0;
+}
+/* Ваш файл styles.css */
+
+/* Ваш файл styles.css */
+/* Ваш файл styles.css */
+
+/* Общие стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Стили для шапки */
+.header {
+    background-color: rgba(51, 51, 51, 0.5); /* Цвет с прозрачностью */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили для средней плашки */
+.hero {
+    position: relative; /* Устанавливаем позицию относительно */
+    background-color: rgba(128, 128, 128, 0.5); /* Серый цвет с полупрозрачностью */
+    padding: 100px 0;
+    text-align: center;
+    color: #fff; /* Белый цвет текста */
+}
+
+/* Стили для текста в средней плашке */
+.hero h1, .hero p {
+    position: relative; /* Устанавливаем позицию относительно */
+    z-index: 1; /* Устанавливаем позицию выше псевдоэлемента */
+}
+
+/* Стили для раздела "Наши услуги" */
+.services {
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap; /* Добавляем перенос элементов на новую строку при необходимости */
+    justify-content: center;
+}
+
+.service {
+    width: calc(33.33% - 40px); /* Для трех колонок на широких экранах */
+    margin: 0 20px; /* Добавляем отступы между элементами */
+    margin-bottom: 40px; /* Добавляем отступ снизу для красоты */
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    /* Для устройств с шириной экрана до 768px */
+    .service {
+        width: calc(50% - 40px); /* Для двух колонок на средних экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Для устройств с шириной экрана до 480px */
+    .service {
+        width: calc(100% - 40px); /* Для одной колонки на узких экранах */
+    }
+}
