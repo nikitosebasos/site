@@ -1,2 +1,1 @@
-Тестировщик программного обеспечения (QA-engineer)
-2024
+hnvjckfbkgnfdlms nlfhknjlm kjhbh
